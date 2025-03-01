@@ -4,9 +4,12 @@ public class Car {
     private final String name;
     private final int imageResId; // Store image resource ID
 
-    public Car(String name, int imageResId) {
+    private final String manufacturerUrl;
+
+    public Car(String name, int imageResId, String manufacturerUrl) {
         this.name = name;
         this.imageResId = imageResId;
+        this.manufacturerUrl = manufacturerUrl;
     }
 
     public String getName() {
@@ -15,5 +18,10 @@ public class Car {
 
     public int getImageResId() {
         return imageResId;
+    }
+
+    public String getManufacturerUrl() {
+        return manufacturerUrl;
+
     }
 }

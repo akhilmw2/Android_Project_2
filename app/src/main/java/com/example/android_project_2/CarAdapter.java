@@ -1,6 +1,7 @@
 package com.example.android_project_2;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -64,6 +65,14 @@ public class CarAdapter  extends BaseAdapter {
             carName.setTextSize(16);  // Bigger text
             carName.setPadding(0, 8, 0, 8); // More space around text
         }
+
+        // Handle short click (open new activity)
+        convertView.setOnClickListener(v -> {
+            Intent intent = new Intent(context, CarDetailActivity.class);
+            intent.putExtra("imageResId", car.getImageResId());
+            intent.putExtra("carUrl", car.getManufacturerUrl());
+            context.startActivity(intent);
+        });
 
         return convertView;
     }

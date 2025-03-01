@@ -48,15 +48,15 @@ public class MainActivity extends AppCompatActivity {
         carList = new ArrayList<>();
 
         // Add car data (images must be in res/drawable)
-        carList.add(new Car("Mazda 3", R.drawable.audi));
-        carList.add(new Car("Honda Civic", R.drawable.bmw));
-        carList.add(new Car("Toyota Corolla", R.drawable.ford));
-        carList.add(new Car("BMW 3 Series", R.drawable.honda));
-        carList.add(new Car("Audi A4", R.drawable.mazda));
-        carList.add(new Car("Ford Mustang", R.drawable.mercedes));
-        carList.add(new Car("Ford Mustang", R.drawable.nissan));
-        carList.add(new Car("Ford Mustang", R.drawable.tesla));
-        carList.add(new Car("Ford Mustang", R.drawable.toyota));
+        carList.add(new Car("Mazda 3", R.drawable.mazda, "https://www.mazda.com"));
+        carList.add(new Car("Honda Civic", R.drawable.honda, "https://www.honda.com"));
+        carList.add(new Car("Toyota Corolla", R.drawable.toyota, "https://www.toyota.com"));
+        carList.add(new Car("BMW 3 Series", R.drawable.bmw, "https://www.bmw.com"));
+        carList.add(new Car("Audi A4", R.drawable.audi, "https://www.audi.com"));
+        carList.add(new Car("Ford Mustang", R.drawable.ford, "https://www.ford.com"));
+        carList.add(new Car("Tesla Model 3", R.drawable.tesla, "https://www.tesla.com"));
+        carList.add(new Car("Nissan Altima", R.drawable.nissan, "https://www.nissanusa.com"));
+        carList.add(new Car("Mercedes C-Class", R.drawable.mercedes, "https://www.mercedes-benz.com"));
 
         adapter = new CarAdapter(this, carList);
         adjustGridHeight();
