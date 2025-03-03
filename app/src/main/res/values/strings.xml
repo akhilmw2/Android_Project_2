@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Android_Project_2</string>
+    <string name="dealers_for_car">Dealers for Car</string>
+    <string name="full_car_image">Full Car Image</string>
+    <string name="car_image">Car Image</string>
+    <string name="car_name">Car Name</string>
 </resources>
